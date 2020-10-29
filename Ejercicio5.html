@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio5</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Ejercicio5.css" />
+  </head>
+  <body>
+    <div class="container bg-light" id="mycontainer">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="NombreDePila">Nombre de pila</label>
+          <input
+            type="text"
+            class="form-control"
+            id="NombreDePila"
+            placeholder=""
+            value=""
+            required
+          />
+          <div class="invalid-feedback">Nombre de pila requerido</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="Apellido">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Apellido"
+            placeholder=""
+            value=""
+            required
+          />
+          <div class="invalid-feedback">Apellido requerido</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="nombreUsuario">Nombre de Usuario</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            id="nombreUsuario"
+            placeholder="Nombre de usuario"
+            required
+          />
+          <div class="invalid-feedback" style="width: 100%">
+            El nombre de usuario es requerido.
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="mail"
+          >Correo electrónico <span class="text-muted">(Opcional)</span></label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="mail"
+          placeholder="you@example.com"
+        />
+        <div class="invalid-feedback">
+          Por favor, ingrese un correo electrónico válido.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="direccion">Habla a</label>
+        <input
+          type="text"
+          class="form-control"
+          id="direccion"
+          placeholder="1234 Main St"
+          required
+        />
+        <div class="invalid-feedback">Por favor, ingrese su dirección.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="direccion1"
+          >Dirección 2 <span class="text-muted">(Opcional)</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="direccion1"
+          placeholder="Apartmento o suite"
+        />
+      </div>
+      <div class="row">
+        <div class="col-md-5 mb-3">
+          <label for="pais">País</label>
+          <select class="custom-select d-block w-100" id="pais" required>
+            <option value="">Escoger...</option>
+            <option>Argentina</option>
+            <option>Uruguay</option>
+            <option>Brasil</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor, seleccione un país válido
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="ciudad">Ciudad</label>
+          <select class="custom-select d-block w-100" id="ciudad" required>
+            <option value="">Escoger...</option>
+            <option>Buenos Aires</option>
+            <option>Montevideo</option>
+            <option>Brasilia</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor, seleccione una ciudad válida
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="codigo">Código postal</label>
+          <input
+            type="text"
+            class="form-control"
+            id="codigo"
+            placeholder=""
+            required
+          />
+          <div class="invalid-feedback">Código postal requerido</div>
+        </div>
+      </div>
+      <hr class="mb-4" />
+      <div class="custom-control custom-checkbox">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="mismaDireccion"
+        />
+        <label class="custom-control-label" for="mismaDireccion"
+          >La dirección de envío es la misma que mi dirección de
+          facturación</label
+        >
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="guardarInfo" />
+        <label class="custom-control-label" for="guardarInfo"
+          >Guarde esta información para la próxima vez
+        </label>
+      </div>
+      <hr class="mb-4" />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>'
+        );
+    </script>
+    <script
+      src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="form-validation.js"></script>
+  </body>
+</html>
